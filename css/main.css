@@ -1,0 +1,153 @@
+/* STYLESHEET */
+
+body {
+	background-color:#666;
+	background-image:url(../img/bg.png);
+	color:#FFF;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/* PLACEMENT OF CONTENT */
+#main {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+/* MENU */
+#menu {
+	height: auto;
+	width: auto;
+	color: white;
+	outline: solid;
+	outline-color: #000;
+	padding-bottom: 10px;
+}
+.navbar-header a {
+	margin-left: 20px;
+}
+.navbar-nav, .navbar-nav > li, .navbar-header {
+	float:none !important;
+}
+.navbar a:link {
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none
+}
+.navbar a:visited {
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none
+}
+.navbar a:hover {
+	color:#606060;
+	background-color:#FFFFFF;
+	text-decoration:none
+}
+.navbar a:active {
+	color:#606060;
+	background-color:#FFFFFF;
+	text-decoration:none
+}
+/* SMALL DEVICES (PHONES) */
+/* CENTERS ELEMENTS */
+@media only screen and (max-width : 480px) {
+			body {
+				margin-left: 0px;
+				margin-right: 0px;
+				overflow-x: hidden;
+			}
+			.navbar {
+				width: auto;
+				margin-right: 0px;
+			}
+			.col-md-4 figure img{
+				margin-left: 20%;
+				margin-right: 0px;
+			}
+			#video_content {
+				margin-left: -20px;
+			}
+			#content {
+				padding-left: 0px;
+				margin-top:0px;
+			}
+			#menu {
+				margin-left: 0px;
+				width: auto;
+			}
+			#main {
+				padding-left: 0px;
+				margin-right: 0px;
+				margin-top: 0px;
+				margin-left: 0px;
+			}
+}
+/* STYLES FOR TITLES AND PARAGRAPHS */
+h1 {
+	text-align:center;
+	font:"Comic Sans MS";
+	font-weight:bold;
+	color:#4a4a4a;
+	padding-top: 20px;
+}
+p {
+	font-family:"Arial, Helvetica, sans-serif";
+	font-size:18px;
+	font-weight: normal;
+	color: white;
+}
+/* HEADER TITLE OF CONTENT */
+#header {
+	height:75px;
+	background-color:#ffffff;
+	border-bottom:solid;
+	border-bottom-color:#000;
+	margin-top:-20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+/* PROFILE IMAGE */
+figure img {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+/* TABLE */
+table, th, td {
+	border: 1px solid black;
+	margin-left: 10px;
+}
+tr {
+	display: table-row;
+}
+th {
+	font-weight:600;
+}
+/* PARENT VIDEO HOLDER */
+#media {
+	height:auto;
+	padding-left:30px;
+	overflow:hidden;
+}
+/* VIDEO HOLDER */
+#video_content {
+	height:auto;
+	width:auto;
+	padding-left:10%;
+	margin-top: -30px;
+}
+/* MESUREMENTS FOR VIDEOS */
+video {
+	height:240px;
+	width:320px;
+	padding:-30px;
+	padding-right:20px;
+}
+/* PADDING FOR COLUMN CONTENT */
+.col-md-4 {
+	padding-bottom: 10px;
+}
+.col-md-6 {
+	padding-bottom: 10px;
+}
+.col-md-12 {
+	padding-bottom: 10px;
+}
