@@ -1,7 +1,237 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMValencia</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/transition.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/transition.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+    <div id="main" class="row">
+      <!-- MENU -->
+      <nav class="navbar navbar-default col-md-4" id="menu" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Anton Valencia</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <!-- PILLS ARE ANOTHER FORM OF TABS -->
+          <ul class="nav nav-pills nav-stacked">
+            <li><a id="page_transition" class="btn btn-default" onClick="gotoPage2(0)">HOME</a></li>
+            <li><a id="page_transition" class="btn btn-default" onClick="gotoPage2(1)">ABOUT</a></li>
+            <li><a id="page_transition" class="btn btn-default" onClick="gotoPage2(2)">PROFESSIONAL</a></li>
+            <li><a id="page_transition" class="btn btn-default" onClick="gotoPage2(3)">MICROMOUSE</a></li>
+            <li><a id="page_transition" class="btn btn-default" onClick="gotoPage2(4)">COMPUTER</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- PARENT CONTAINER OF CONTENT -->
+      <div id="content" class="container">
+        <div class="row">
+          <!-- PAGE TRANSITION CONTENT -->
+        <div id="pt-main" class="pt-perspective col-md-8">
+          <!-- HOME PAGE -->
+          <div id="page1" class="pt-page pt-page1">
+            <div class="row">
+              <div class="page-header" id="header">
+                <h1>AMValencia</h1>
+              </div>
+              <div class="col-md-4">
+                <figure>
+                  <img src="img/AntonSuit.jpg" class="img-responsive" alt="Anton_pic" style="border:solid; border-color:#000;" width="221" height="228" />
+                </figure>
+              </div>
+              <div class="col-md-8">
+                <p>My name is Anton, thank you for coming to my website. This website is here for me to tell you a little about myself and also show you what
+				I have going on. A big thank you goes to my friend Elizabeth for writing this site for me. I started it but she cleaned it up for me and added
+				some neat effects.</p>
+              <p> Thank you, Anton</p>
+              <p>Quick info about me:<p/>
+                <p>I graduated from UCSD with a major in Electrical Engineering in 2012. My passion
+                has always been in the field of electronics and programming. Right now I'm currently working as an embedded software engineer but
+                I really mostly do project engineering. Hopefully I find myself continuously working on embedded projects and web development projects
+                because I like to write software and also work on hardware.</p>
+              </div>
+            </div>
+          </div> <!-- .pt-page1 -->
+          <!-- ABOUT PAGE-->
+          <div id="page2" class="pt-page pt-page2">
+            <div class="row">
+              <div class="page-header" id="header">
+                <h1>ABOUT</h1>
+              </div>
+              <div class="col-md-12">
+                <p>Technical specifications:</p>
+                <p>Name: Anton Valencia</p>
+                <p>Classification: Geek</p>
+                <p>Haha, no really I would like to think that I'm a down to earth kind of guy. I love talking about electronics and my two favorite
+				companies in the whole world are Sony and Google, in that order. Sorry for any others that might be reading this. Recently I just got
+				married and have been busy working mostly. I'm trying to be a little more proactive in updating this location here.</p>
+                <p>Sincerely, Anton</p>
+              </div>
+            </div>
+          </div> <!-- .pt-page2 -->
+          <!-- PROFESSIONAL PAGE-->
+          <div id="page3" class="pt-page pt-page3">
+            <div class="row">
+              <div class="page-header" id="header">
+                <h1>PROFESSIONAL</h1>
+              </div>
+              <div class="col-md-12">
+			  <p><a href="http://www.linkedin.com/pub/anton-valencia/1b/21a/ba2" target="_blank" style="color:#00C">LinkedIn Profile</a></p>
+                <p>Education:</p>
+                <p>Electrical Engineering, emphasis on Computer Design
+                  University: University of California, San Diego
+                  Graduated June 16th, 2012</p>
+                <p>Fullerton College and Cypress College
+                  Earned Associate's Degree of Science in Engineering.
+                  Earned Associate's Degree of Arts in Business Administration.
+                  Transferred to UCSD in Fall 2009.</p>
+                <p>Goals:</p>
+                <p>Interested in full-time engineering opportunities with an emphasis in embedded system design and programming where I can utilize my academic knowledge and experience to assist with projects while continuing my personal and professional development.</p>
+                <p>Skills:</p>
+                <p>Computer Software: PSpice, Multisim, LabVIEW, Eagle, Matlab, Eclipse, VIM, Spim, Windows, Unix, Linux, OpenOffice, LibreOffice, Microsoft Office.</p>
+                <p>Programming Languages: C, C++, Java, HTML, Verilog, MIPS</p>
+                <p>Related Devices: Multimeter, Oscilloscope, Power Supply, Function Generator, Drill Press, Band Saw.</p>
+                <p>Additional: PCB Design, through-hole and SMT soldering experience, excellent customer service skills, self-starter.</p>
+                <p>Coursework:</p>
+                <p>Electrical Engineering: Analog Design, Digital Design, Computer Engineering, Linear and Non-Linear Circuits and Systems, Steady State Analysis, First and Second Order Systems, Feedback loops,</p>
+                <p>Electromagnestism Physics: Electricity and Magnetism, Fluids, Waves, Optics, Relativity, Newtonian and Quantum Mechanics Mathematics: Differential and Integral Calculus, Fourier Analysis, Convolution, Z Transform, matrices.</p>
+                <p>Economics: Macroeconomics, Microeconomics, consumer and producer supply and demand</p>
+                <p>Organizations:</p>
+                <p>Institute of Electrical and Electronics Engineers (IEEE): Team Lead, Micromouse Society of Hispanic Professional Engineers (SHPE): Webmaster</p>
+                <p>Experience:</p>
+                <p>Esterline Power Systems (Staffmark), September 2012 to present </p>
+                <p>Manufacturing Engineering Intern
+                    Sears Holdings, June 2010 to present </p>
+                <p>Electronics Sales Consultant
+                    Sears Holdings, August 2008 to September 2009 </p>
+                <p>Electronics Sales Consultant
+                    Allstate Insurance, January 2006 to August 2008 </p>
+                <p>Claims Processing Specialist
+                    Lowe's Home Improvement, March 2005 to January 2006</p>
+                <p> Interests:</p>
+                <p>Learning new languages, all things technology.</p>
+              </div>
+            </div>
+          </div> <!-- .pt-page3 -->
+          <!-- MICROMOUSE PAGE -->
+          <div id="page4" class="pt-page pt-page4">
+            <div class="row">
+              <div class="page-header" id="header">
+                <h1>MICROMOUSE</h1>
+              </div>
+              <div class="col-md-12" id="media">
+                <p>Here is some of the cool stuff I did while in IEEE Micromouse club at UCSD.</p>
+                <div id="video_content">
+                  <video width="320" height="240"  controls>
+                    <source src="media/MM_Vid1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <video width="320" height="240" controls>
+                    <source src="media/MM_Vid2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <video width="320" height="240" controls>
+                    <source src="media/MM_Vid3.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <video width="320" height="240" controls>
+                    <source src="media/MM_Vid4.mp4" type="video/mp4"/>
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div> <!-- .pt-page4 -->
+          <!-- COMPUTER BUILD PAGE -->
+          <div id="page5" class="pt-page pt-page5">
+            <div class="row" id="build">
+              <div class="page-header" id="header">
+                <h1>COMPUTER</h1>
+              </div>
+              <div class="col-md-12" style="margin-left:10px;">
+                <p>This is the computer I built, originally I ordered everything from Newegg as most of it came as a bundle.
+				I have since made some additional upgrades. Below is what I am currently working with.</p>
+              </div>
+              <div class="col-md-6">
+                <table bordercolor="#000000" cellspacing="1">
+                  <tr>
+                    <th>Computer Part</th>
+                    <th>Detail</th>
+                  </tr>
+                  <tr>
+                    <th>Processor</th>
+                    <th>AMD Phenom II X6 3.3Hz</th>
+                  </tr>
+                  <tr>
+                    <th>Motherboard</th>
+                    <th>Gigabyte board</th>
+                  </tr>
+                  <tr>
+                    <th>Video Card</th>
+                    <th>AMD Radeon R7 350</th>
+                  </tr>
+                  <tr>
+                    <th>Case</th>
+                    <th>Cooler Master Storm Scout</th>
+                  </tr>
+                  <tr>
+                    <th>RAM</th>
+                    <th>G.Skill 16GB</th>
+                  </tr>
+                  <tr>
+                    <th>Hard Drive</th>
+                    <th>Samsung EVO 1 TB SSD</th>
+                  </tr>
+                  <tr>
+                    <th>Optical Drive</th>
+                    <th>Sony Lightscribe DVD Burner</th>
+                  </tr>
+                  <tr>
+                    <th>Heatsink</th>
+                    <th>Cooler Master Heatsink</th>
+                  </tr>
+                  <tr>
+                    <th>Monitor</th>
+                    <th>Asus 23.6" LCD</th>
+                  </tr>
+                  <tr>
+                    <th>Keyboard</th>
+                    <th>ProHT Gaming Keyboard</th>
+                  </tr>
+                  <tr>
+                    <th>Operating System</th>
+                    <th>Windows 10 Home 64bit</th>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-md-6">
+                <p> So I used to have a Radeon HD 6850 which I have since replaced, which used to have an unusual screen issue
+				and some weird flickering when unplugging a usb flashdrive. It had some random problems, probably because it was a HIS brand card.
+				Unusual manufacturer, not I have an MSI card. Works with no problems thankfully.</p>
+              </div>
+            </div>
+          </div> <!-- .pt-page5 -->
+        </div><!-- #pt-main -->
+      </div> <!-- .row -->
+     </div> <!-- .container -->
+    	<script type="text/javascript" src="js/transition.js"></script>
+    </div> <!-- #main -->
+  </div> <!-- .container -->
 </body>
 </html>
