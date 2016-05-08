@@ -1,5 +1,9 @@
 // JavaScript Document
 
+  // global
+  var Modernizr = window.Modernizr, $body = $( 'body' );
+
+
     var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
 		$iterate = $( '#page-transition' ),
@@ -18,15 +22,15 @@
 		animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
 		// support css animations
 		support = Modernizr.cssanimations;
-		
+
 		 $pages.each( function() {
 			var $page = $( this );
 			$page.data( 'originalClassList', $page.attr( 'class' ) );
 		} );
 
 		$pages.eq( current ).addClass( 'pt-page-current' );
-    
-    
+
+
     function onEndAnimation( $outpage, $inpage ) {
 		endCurrPage = false;
 		endNextPage = false;
@@ -40,11 +44,11 @@
     }
 
 
-// -------------------------------------------------------------------------------------- // 
+// -------------------------------------------------------------------------------------- //
 //                          MOVE FROM BOTTOM TO TOP
-// -------------------------------------------------------------------------------------- // 
+// -------------------------------------------------------------------------------------- //
  function gotoPage2(pagenumber) {
-     
+
      if(current == pagenumber) {return true;}
      else {
 
