@@ -40,7 +40,7 @@
 }
 
 .pt-perspective {
-	position:relative;
+	position: relative;
 	height: auto;
 	width: auto;
 	-webkit-perspective: 1200px;
@@ -55,7 +55,6 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	position: absolute;
-	visibility: hidden;
 	opacity: 0;
 	/*overflow: auto;*/
 	-webkit-backface-visibility: hidden;
@@ -82,8 +81,6 @@
 }
 /* STYLES FOR TEXT, COLORS, BACKGROUNDS FOR PAGES */
 .pt-page {
-	height:auto;
-	width: auto;
 	outline:solid;
 	outline-color:#000;
 }

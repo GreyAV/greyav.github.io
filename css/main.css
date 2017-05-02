@@ -47,13 +47,17 @@ body {
 	background-color:#FFFFFF;
 	text-decoration:none
 }
+.btn-default {
+	background-color: #606060;
+	color: white;
+}
 /* SMALL DEVICES (PHONES) */
 /* CENTERS ELEMENTS */
 @media only screen and (max-width : 480px) {
 			body {
 				margin-left: 0px;
 				margin-right: 0px;
-				overflow-x: hidden;
+				overflow-x: auto;
 			}
 			.navbar {
 				width: auto;
@@ -105,18 +109,13 @@ p {
 	margin-left: 5px;
 	margin-right: 5px;
 }
-/* PROFILE IMAGE */
-figure img {
-	margin-left: 30px;
-	margin-top: 10px;
-}
 /* TABLE */
 table, th, td {
 	border: 2px solid black;
 }
 td, th {
 	text-align: center;
-	padding: 8px;
+	padding: 4px;
 }
 th {
     background-color: white;
